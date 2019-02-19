@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="AddonDLL|Win32">
+      <Configuration>AddonDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="AddonDLL|x64">
+      <Configuration>AddonDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="CheatDLL|Win32">
+      <Configuration>CheatDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="CheatDLL|x64">
+      <Configuration>CheatDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RivetEXE|Win32">
+      <Configuration>RivetEXE</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RivetEXE|x64">
+      <Configuration>RivetEXE</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7A45FFD7-8EA3-4254-8175-2D39757986A3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AreaGameToolkit</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <ProjectName>InjectMe</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CheatDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AddonDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RivetDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CheatDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='AddonDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetDLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CheatDLL|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AddonDLL|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CHEAT_DLL;_CRT_SECURE_NO_WARNINGS;IMGUI_INCLUDE_IMGUI_USER_INL;SFML_STATIC;WIN32;NDEBUG;AREAGAMETOOLKIT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)SFML-2.5.0-windows-vc15-32-bit\SFML-2.5.0\include;$(SolutionDir)zlib-1.2.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)SFML-2.5.0-windows-vc15-32-bit\SFML-2.5.0\lib;$(SolutionDir)zlib-1.2.7;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dwmapi.lib;zlibstatd_x86.lib;ws2_32.lib;winmm.lib;opengl32.lib;freetype.lib;sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;sfml-network-s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMTD %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(TargetDir)$(ProjectName).dll" "C:\AsdaGlobal\system\Cheat.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CHEAT_DLL;_CRT_SECURE_NO_WARNINGS;IMGUI_INCLUDE_IMGUI_USER_INL;SFML_STATIC;WIN32;NDEBUG;AREAGAMETOOLKIT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)SFML-2.5.0-windows-vc15-32-bit\SFML-2.5.0\include;$(SolutionDir)zlib-1.2.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)SFML-2.5.0-windows-vc15-32-bit\SFML-2.5.0\lib;$(SolutionDir)zlib-1.2.7;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dwmapi.lib;zlibstatd_x86.lib;ws2_32.lib;winmm.lib;opengl32.lib;freetype.lib;sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;sfml-network-s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ADDON_DLL;IMGUI_INCLUDE_IMGUI_USER_INL;SFML_STATIC;WIN32;NDEBUG;AREAGAMETOOLKIT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SFML-2.5.0-windows-vc15-32-bit\SFML-2.5.0\include;$(SolutionDir)zlib-1.2.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dwmapi.lib;zlibstatd_x86.lib;ws2_32.lib;winmm.lib;opengl32.lib;freetype.lib;sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;sfml-network-s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)SFML-2.5.0-windows-vc15-32-bit\SFML-2.5.0\lib;$(SolutionDir)zlib-1.2.7;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMTD %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(TargetDir)$(ProjectName).dll" "C:\Asda 2\system\Addon.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;AREAGAMETOOLKIT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>RIVET_EXE;_CRT_SECURE_NO_WARNINGS;IMGUI_INCLUDE_IMGUI_USER_INL;SFML_STATIC;WIN32;NDEBUG;AREAGAMETOOLKIT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMTD %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RivetDLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;AREAGAMETOOLKIT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CheatDLL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;AREAGAMETOOLKIT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;AREAGAMETOOLKIT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='AddonDLL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;AREAGAMETOOLKIT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Addon.hpp" />
+    <ClInclude Include="Asda2Hook.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Asda2Encryption.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Asda2PacketFactory.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Asda2Proxy.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Asda2Locale.hpp" />
+    <ClInclude Include="AsdaGlobalD3D9HookHandler.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalHook.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalEncryption.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalPacketFactory.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalProxy.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalWSAHookHandler.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Buffer.hpp" />
+    <ClInclude Include="Cheat.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ClientEmu.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ClientEmuConsole.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ClientSocket.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalData.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="D3D9Hook.hpp" />
+    <ClInclude Include="DailyBonus.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Detours\Detours.h" />
+    <ClInclude Include="AsdaGlobalHash.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Hijack.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="IBufferHandler.hpp" />
+    <ClInclude Include="ID3D9HookHandler.hpp" />
+    <ClInclude Include="IDA\defs.h" />
+    <ClInclude Include="IEncryption.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Asda2D3D9HookHandler.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="IInnerClientEmu.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\imgui_memory_editor.h" />
+    <ClInclude Include="ImGui\imgui_user.h" />
+    <ClInclude Include="ImGui\stb_rect_pack.h" />
+    <ClInclude Include="ImGui\stb_textedit.h" />
+    <ClInclude Include="ImGui\stb_truetype.h" />
+    <ClInclude Include="IMiscBUttonHandler.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="InnerClientEmuDecorator.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="INPCButtonHandler.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="IOuterClientEmu.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="IPacketFactory.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="IProxyHandler.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ISocketHandler.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="IWSAHookHandler.hpp" />
+    <ClInclude Include="KickClientEmu.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Logger.hpp" />
+    <ClInclude Include="Memory.hpp" />
+    <ClInclude Include="MiningWar.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="MiscButtonData.hpp" />
+    <ClInclude Include="NPCButtonData.hpp" />
+    <ClInclude Include="OuterClientEmuDecorator.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="PacketOptions.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalPost.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Proxy.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Rivet.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RivetClientEmu.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ServerSocket.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Sniffer.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Socket.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="AsdaGlobalSync.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Task.hpp" />
+    <ClInclude Include="TaskExecutor.hpp" />
+    <ClInclude Include="Teleport.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="TextureFactory.hpp" />
+    <ClInclude Include="Translator.hpp" />
+    <ClInclude Include="unzipper\unzipper.h" />
+    <ClInclude Include="WSAHook.hpp" />
+    <ClInclude Include="Asda2WSAHookHandler.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="WSAConnectData.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Addon.cpp" />
+    <ClCompile Include="Asda2Hook.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Asda2Encryption.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Asda2PacketFactory.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Asda2Proxy.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalD3D9HookHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalHook.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalEncryption.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalPacketFactory.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalProxy.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalWSAHookHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Buffer.cpp" />
+    <ClCompile Include="Cheat.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ClientEmu.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ClientEmuConsole.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ClientSocket.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalData.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D3D9Hook.cpp" />
+    <ClCompile Include="DailyBonus.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Detours\Detours.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="AsdaGlobalHash.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Asda2D3D9HookHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Hijack.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_demo.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="KickClientEmu.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="MiningWar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalPost.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="OuterClientEmuDecorator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Proxy.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Rivet.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RivetClientEmu.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ServerSocket.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Sniffer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="InnerClientEmuDecorator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RivetDLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CheatDLL|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RivetEXE|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='AddonDLL|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalSync.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="Task.inl">
+      <FileType>Document</FileType>
+    </None>
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="TaskExecutor.cpp" />
+    <ClCompile Include="Teleport.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TextureFactory.cpp" />
+    <ClCompile Include="Translator.cpp" />
+    <ClCompile Include="unzipper\unzipper.cpp" />
+    <ClCompile Include="WSAHook.cpp" />
+    <ClCompile Include="Asda2WSAHookHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1000" />
+    <None Include="1003" />
+    <None Include="1005" />
+    <None Include="1012" />
+    <None Include="1016" />
+    <None Include="20000" />
+    <None Include="4001" />
+    <None Include="5041" />
+    <None Include="5043" />
+    <None Include="5056" />
+    <None Include="5058" />
+    <None Include="9915" />
+    <None Include="ImGui\imgui_user.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

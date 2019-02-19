@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Detours">
+      <UniqueIdentifier>{a31d4593-d200-458a-a22e-bc64ee0625a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{10b54f14-a0bb-4635-a2a1-d2b004ee1f85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unzipper">
+      <UniqueIdentifier>{f498fdf3-b998-4768-b814-c9e93b92f9d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IDA">
+      <UniqueIdentifier>{d4b46c57-bbad-48ed-8437-fcf2d1c4ec1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects">
+      <UniqueIdentifier>{ba5613b6-f9cd-4e6e-adde-3fbfc1d81509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Cheat">
+      <UniqueIdentifier>{77885025-0793-47f4-bd19-10ac90911558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Cheat\Sniffer">
+      <UniqueIdentifier>{6a1763fb-32bb-4ea5-bdb0-681493b80035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Cheat\Teleport">
+      <UniqueIdentifier>{4e18d7ac-095a-4cdb-b5ce-ca8829c415ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Cheat\Hijack">
+      <UniqueIdentifier>{ecf6f15e-62e8-47e8-a613-176df6859d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Addon">
+      <UniqueIdentifier>{f5195d3a-4583-49ee-9eb8-e30d2e3f3d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Addon\UI">
+      <UniqueIdentifier>{98d9c36f-7933-4f6b-b4da-1448c8045f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Addon\UI\DailyBonus">
+      <UniqueIdentifier>{fa509f3f-ede3-4392-bdd3-e7d927be634e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Addon\UI\MiningWar">
+      <UniqueIdentifier>{c06501dc-47de-4849-89eb-3a2a31c6065a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Rivet">
+      <UniqueIdentifier>{126502ff-4f44-4266-965f-bd26096c0089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\Rivet\RivetClientEmu">
+      <UniqueIdentifier>{aafec6f1-bd93-4007-83ed-977f95d06309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit">
+      <UniqueIdentifier>{bfffb6d2-2361-4b50-af9f-993724254e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Utils">
+      <UniqueIdentifier>{12c33cc2-8638-461a-a516-d800ba413cd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Utils\Memory">
+      <UniqueIdentifier>{625da791-5dda-401d-ab2a-f56443691923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Utils\Logger">
+      <UniqueIdentifier>{f20a1549-9d69-4422-9942-2c6f848414c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Utils\Buffer">
+      <UniqueIdentifier>{1456ca96-9984-44e4-80af-b45814320436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Utils\IBufferHandler">
+      <UniqueIdentifier>{a11444cf-1f7f-42b1-82a8-091d21703a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Utils\Task">
+      <UniqueIdentifier>{b88b65d7-263a-4986-95a1-a03d565c9691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Utils\TaskExecutor">
+      <UniqueIdentifier>{0394532d-b758-469b-b9fd-c77e3b3ae9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Utils\Translator">
+      <UniqueIdentifier>{92d12f8c-2c26-4375-b94e-da5ea79e0d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network">
+      <UniqueIdentifier>{979062c1-0886-43a1-ad77-95ec67b4ca59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\Socket">
+      <UniqueIdentifier>{1124b80c-e1c7-4588-be72-2aa012114267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\ServerSocket">
+      <UniqueIdentifier>{97961cff-bd67-4af9-888b-28ee7dbfe01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\ClientSocket">
+      <UniqueIdentifier>{9c99d67b-c3a3-498e-b87f-4c441fc0f83e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\IEncryption">
+      <UniqueIdentifier>{933f2699-9534-4c01-a274-5ecfffb0a98d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\ISocketHandler">
+      <UniqueIdentifier>{5040453a-e261-4dc7-bbbb-7221a7cb3e12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\Proxy">
+      <UniqueIdentifier>{5a61f205-b544-484c-9105-74e2f7f2bf33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\IProxyHandler">
+      <UniqueIdentifier>{3f7f80c3-4121-4d88-b9dd-53f073119997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\ClientEmu">
+      <UniqueIdentifier>{62afe971-1e4a-43e0-b3db-0187374febfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\IPacketFactory">
+      <UniqueIdentifier>{03645286-7bbf-40b7-9856-44bf6750f916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\Asda2Encryption">
+      <UniqueIdentifier>{dcd42128-d63c-41cc-b6ca-9cdba02783a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\Asda2PacketFactory">
+      <UniqueIdentifier>{9974ffb8-8ede-4594-b944-5efd3563d9e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\AsdaGlobalEncryption">
+      <UniqueIdentifier>{25bbabc5-d883-40a6-a724-a9590136fe1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\AsdaGlobalPacketFactory">
+      <UniqueIdentifier>{f59d0528-0806-4980-bce6-c2d7f971ff2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\Asda2Proxy">
+      <UniqueIdentifier>{7a65904e-ee7b-4406-8d19-a73bef0e8bcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\IPacketBuilder">
+      <UniqueIdentifier>{3a6fa3c7-5345-4fd8-be67-d6652ef72d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\AsdaGlobalProxy">
+      <UniqueIdentifier>{bf8c9c21-7bd5-40a3-8652-0b7a99f77c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\ClientEmuConsole">
+      <UniqueIdentifier>{012dd2c6-fad8-4d95-b3a9-88f27d2d1d4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\IInnerClientEmu">
+      <UniqueIdentifier>{1aaf34d8-132a-466c-a9ab-d8b154f38939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\InnerClientEmuDecorator">
+      <UniqueIdentifier>{20186f14-b4f4-44f9-91c1-4847bddcd7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\IOuterClientEmu">
+      <UniqueIdentifier>{0f1c2658-1f2b-4ea5-96a0-d5abf23f2dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\OuterClientEmuDecorator">
+      <UniqueIdentifier>{4f5c0fb2-f430-4763-8ea4-ff9349d15543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Network\KickClientEmu">
+      <UniqueIdentifier>{87a95f06-b37b-46d0-993a-95c13962355b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\UI">
+      <UniqueIdentifier>{d5c56806-a034-405b-87cb-a649b5da317f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\UI\TextureFactory">
+      <UniqueIdentifier>{3b902ab2-13db-4fa1-be64-8863c50e7725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook">
+      <UniqueIdentifier>{68c48cfa-3cf9-4c6e-abe7-5efba89c16c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\WSA">
+      <UniqueIdentifier>{0d8fd49b-8dfc-4129-8304-9233aff7082d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\WSA\WSAConnectData">
+      <UniqueIdentifier>{4b5a181d-fc2b-478b-a9b6-6ad6745c5252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\WSA\WSAHook">
+      <UniqueIdentifier>{b76803d7-4ebf-4779-9d57-bbc8f474b148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\WSA\IWSAHookHandler">
+      <UniqueIdentifier>{b1275b1c-90dd-4438-9674-b7d414cf8f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\WSA\Asda2WSAHookHandler">
+      <UniqueIdentifier>{d1e80c88-1c0c-450d-a539-91a171f96443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\WSA\AsdaGlobalWSAHookHandler">
+      <UniqueIdentifier>{be134116-2fa4-432d-a008-36973f92a2fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\D3D9">
+      <UniqueIdentifier>{4e676e1e-e8ab-4624-ae43-03a292d57686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\D3D9\ID3D9HookHandler">
+      <UniqueIdentifier>{c317b3ac-6987-4687-9369-d7e6ce4499e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\D3D9\D3D9Hook">
+      <UniqueIdentifier>{491f9ce9-2ccd-417d-a1aa-45555b60926a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\D3D9\Asda2D3D9HookHandler">
+      <UniqueIdentifier>{910915ed-7281-4181-9996-1fc22d2e06ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\D3D9\AsdaGlobalD3D9HookHandler">
+      <UniqueIdentifier>{4883e4a7-44e8-4ed1-bde8-5e3e69293ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\Asda2">
+      <UniqueIdentifier>{c776e77b-fd46-4e09-8abf-c2957d77fc02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\Asda2\Asda2Hook">
+      <UniqueIdentifier>{3469d1cc-56d3-45e6-b82c-6b41a2dc8f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\Asda2\INPCButtonHandler">
+      <UniqueIdentifier>{7f3f2c75-2d4d-45be-a951-9b509c3a1c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\Asda2\IMiscButtonHandler">
+      <UniqueIdentifier>{81932428-e64c-4705-b9d0-143f0b088824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\Asda2\MiscButtonData">
+      <UniqueIdentifier>{2cdeed1b-2b36-48b7-9d32-8190b08fb33a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\Asda2\NPCButtonData">
+      <UniqueIdentifier>{1f72eda1-bca2-43b9-8f08-aa8d2e12480a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\Asda2\Asda2Locale">
+      <UniqueIdentifier>{779c34a8-866b-4733-87b1-1a70b28487cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\AsdaGlobal">
+      <UniqueIdentifier>{2a03d2e9-d487-4585-a41f-12d2bdb84c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\AsdaGlobal\AsdaGlobalHook">
+      <UniqueIdentifier>{b26c0a81-22c9-4d62-a816-1d414a8daacf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\AsdaGlobal\AsdaGlobalHash">
+      <UniqueIdentifier>{a3fba887-7c6b-4d6f-a0ab-3733c6ebbc7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\AsdaGlobal\AsdaGlobalPost">
+      <UniqueIdentifier>{714ba491-2b8b-4604-a172-edd21b60cc88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\AsdaGlobal\AsdaGlobalSync">
+      <UniqueIdentifier>{477175ca-4979-4de4-ac48-8d792a9b2bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Toolkit\Hook\AsdaGlobal\AsdaGlobalData">
+      <UniqueIdentifier>{f95a44da-feec-40ac-8e57-e83499456bc4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketOptions.hpp">
+      <Filter>Toolkit</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.hpp">
+      <Filter>Toolkit\Utils\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.hpp">
+      <Filter>Toolkit\Utils\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.hpp">
+      <Filter>Toolkit\Utils\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="IBufferHandler.hpp">
+      <Filter>Toolkit\Utils\IBufferHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.hpp">
+      <Filter>Toolkit\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerSocket.hpp">
+      <Filter>Toolkit\Network\ServerSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSocket.hpp">
+      <Filter>Toolkit\Network\ClientSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="IEncryption.hpp">
+      <Filter>Toolkit\Network\IEncryption</Filter>
+    </ClInclude>
+    <ClInclude Include="ISocketHandler.hpp">
+      <Filter>Toolkit\Network\ISocketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy.hpp">
+      <Filter>Toolkit\Network\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="IProxyHandler.hpp">
+      <Filter>Toolkit\Network\IProxyHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientEmu.hpp">
+      <Filter>Toolkit\Network\ClientEmu</Filter>
+    </ClInclude>
+    <ClInclude Include="IPacketFactory.hpp">
+      <Filter>Toolkit\Network\IPacketFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Asda2Encryption.hpp">
+      <Filter>Toolkit\Network\Asda2Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="Asda2PacketFactory.hpp">
+      <Filter>Toolkit\Network\Asda2PacketFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalEncryption.hpp">
+      <Filter>Toolkit\Network\AsdaGlobalEncryption</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalPacketFactory.hpp">
+      <Filter>Toolkit\Network\AsdaGlobalPacketFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Detours\Detours.h">
+      <Filter>Detours</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx9.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_memory_editor.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_user.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_rect_pack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D9Hook.hpp">
+      <Filter>Toolkit\Hook\D3D9\D3D9Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="ID3D9HookHandler.hpp">
+      <Filter>Toolkit\Hook\D3D9\ID3D9HookHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSAHook.hpp">
+      <Filter>Toolkit\Hook\WSA\WSAHook</Filter>
+    </ClInclude>
+    <ClInclude Include="WSAConnectData.hpp">
+      <Filter>Toolkit\Hook\WSA\WSAConnectData</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureFactory.hpp">
+      <Filter>Toolkit\UI\TextureFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="unzipper\unzipper.h">
+      <Filter>unzipper</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat.hpp">
+      <Filter>Projects\Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="IWSAHookHandler.hpp">
+      <Filter>Toolkit\Hook\WSA\IWSAHookHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Addon.hpp">
+      <Filter>Projects\Addon</Filter>
+    </ClInclude>
+    <ClInclude Include="Asda2Proxy.hpp">
+      <Filter>Toolkit\Network\Asda2Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Asda2Hook.hpp">
+      <Filter>Toolkit\Hook\Asda2\Asda2Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="INPCButtonHandler.hpp">
+      <Filter>Toolkit\Hook\Asda2\INPCButtonHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="IMiscBUttonHandler.hpp">
+      <Filter>Toolkit\Hook\Asda2\IMiscButtonHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="MiscButtonData.hpp">
+      <Filter>Toolkit\Hook\Asda2\MiscButtonData</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCButtonData.hpp">
+      <Filter>Toolkit\Hook\Asda2\NPCButtonData</Filter>
+    </ClInclude>
+    <ClInclude Include="Asda2Locale.hpp">
+      <Filter>Toolkit\Hook\Asda2\Asda2Locale</Filter>
+    </ClInclude>
+    <ClInclude Include="Asda2D3D9HookHandler.hpp">
+      <Filter>Toolkit\Hook\D3D9\Asda2D3D9HookHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Asda2WSAHookHandler.hpp">
+      <Filter>Toolkit\Hook\WSA\Asda2WSAHookHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalHook.hpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalHook</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalHash.hpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalHash</Filter>
+    </ClInclude>
+    <ClInclude Include="IDA\defs.h">
+      <Filter>IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalPost.hpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalPost</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalData.hpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalData</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalSync.hpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalSync</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyBonus.hpp">
+      <Filter>Projects\Addon\UI\DailyBonus</Filter>
+    </ClInclude>
+    <ClInclude Include="MiningWar.hpp">
+      <Filter>Projects\Addon\UI\MiningWar</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalD3D9HookHandler.hpp">
+      <Filter>Toolkit\Hook\D3D9\AsdaGlobalD3D9HookHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalWSAHookHandler.hpp">
+      <Filter>Toolkit\Hook\WSA\AsdaGlobalWSAHookHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="AsdaGlobalProxy.hpp">
+      <Filter>Toolkit\Network\AsdaGlobalProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Sniffer.hpp">
+      <Filter>Projects\Cheat\Sniffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Teleport.hpp">
+      <Filter>Projects\Cheat\Teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="RivetClientEmu.hpp">
+      <Filter>Projects\Rivet\RivetClientEmu</Filter>
+    </ClInclude>
+    <ClInclude Include="Rivet.hpp">
+      <Filter>Projects\Rivet</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientEmuConsole.hpp">
+      <Filter>Toolkit\Network\ClientEmuConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="InnerClientEmuDecorator.hpp">
+      <Filter>Toolkit\Network\InnerClientEmuDecorator</Filter>
+    </ClInclude>
+    <ClInclude Include="IInnerClientEmu.hpp">
+      <Filter>Toolkit\Network\IInnerClientEmu</Filter>
+    </ClInclude>
+    <ClInclude Include="IOuterClientEmu.hpp">
+      <Filter>Toolkit\Network\IOuterClientEmu</Filter>
+    </ClInclude>
+    <ClInclude Include="OuterClientEmuDecorator.hpp">
+      <Filter>Toolkit\Network\OuterClientEmuDecorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.hpp">
+      <Filter>Toolkit\Utils\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskExecutor.hpp">
+      <Filter>Toolkit\Utils\TaskExecutor</Filter>
+    </ClInclude>
+    <ClInclude Include="Hijack.hpp">
+      <Filter>Projects\Cheat\Hijack</Filter>
+    </ClInclude>
+    <ClInclude Include="KickClientEmu.hpp">
+      <Filter>Toolkit\Network\KickClientEmu</Filter>
+    </ClInclude>
+    <ClInclude Include="Translator.hpp">
+      <Filter>Toolkit\Utils\Translator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Buffer.cpp">
+      <Filter>Toolkit\Utils\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Toolkit\Utils\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Toolkit\Utils\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>Toolkit\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerSocket.cpp">
+      <Filter>Toolkit\Network\ServerSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSocket.cpp">
+      <Filter>Toolkit\Network\ClientSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy.cpp">
+      <Filter>Toolkit\Network\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientEmu.cpp">
+      <Filter>Toolkit\Network\ClientEmu</Filter>
+    </ClCompile>
+    <ClCompile Include="Asda2Encryption.cpp">
+      <Filter>Toolkit\Network\Asda2Encryption</Filter>
+    </ClCompile>
+    <ClCompile Include="Asda2PacketFactory.cpp">
+      <Filter>Toolkit\Network\Asda2PacketFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalEncryption.cpp">
+      <Filter>Toolkit\Network\AsdaGlobalEncryption</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalPacketFactory.cpp">
+      <Filter>Toolkit\Network\AsdaGlobalPacketFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Detours\Detours.cpp">
+      <Filter>Detours</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D9Hook.cpp">
+      <Filter>Toolkit\Hook\D3D9\D3D9Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="WSAHook.cpp">
+      <Filter>Toolkit\Hook\WSA\WSAHook</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureFactory.cpp">
+      <Filter>Toolkit\UI\TextureFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="unzipper\unzipper.cpp">
+      <Filter>unzipper</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat.cpp">
+      <Filter>Projects\Cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="Addon.cpp">
+      <Filter>Projects\Addon</Filter>
+    </ClCompile>
+    <ClCompile Include="Asda2Proxy.cpp">
+      <Filter>Toolkit\Network\Asda2Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Asda2Hook.cpp">
+      <Filter>Toolkit\Hook\Asda2\Asda2Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Asda2D3D9HookHandler.cpp">
+      <Filter>Toolkit\Hook\D3D9\Asda2D3D9HookHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Asda2WSAHookHandler.cpp">
+      <Filter>Toolkit\Hook\WSA\Asda2WSAHookHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalHook.cpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalHook</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalHash.cpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalHash</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalPost.cpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalPost</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalData.cpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalData</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalSync.cpp">
+      <Filter>Toolkit\Hook\AsdaGlobal\AsdaGlobalSync</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyBonus.cpp">
+      <Filter>Projects\Addon\UI\DailyBonus</Filter>
+    </ClCompile>
+    <ClCompile Include="MiningWar.cpp">
+      <Filter>Projects\Addon\UI\MiningWar</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalD3D9HookHandler.cpp">
+      <Filter>Toolkit\Hook\D3D9\AsdaGlobalD3D9HookHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalWSAHookHandler.cpp">
+      <Filter>Toolkit\Hook\WSA\AsdaGlobalWSAHookHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="AsdaGlobalProxy.cpp">
+      <Filter>Toolkit\Network\AsdaGlobalProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Sniffer.cpp">
+      <Filter>Projects\Cheat\Sniffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Teleport.cpp">
+      <Filter>Projects\Cheat\Teleport</Filter>
+    </ClCompile>
+    <ClCompile Include="RivetClientEmu.cpp">
+      <Filter>Projects\Rivet\RivetClientEmu</Filter>
+    </ClCompile>
+    <ClCompile Include="Rivet.cpp">
+      <Filter>Projects\Rivet</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientEmuConsole.cpp">
+      <Filter>Toolkit\Network\ClientEmuConsole</Filter>
+    </ClCompile>
+    <ClCompile Include="InnerClientEmuDecorator.cpp">
+      <Filter>Toolkit\Network\InnerClientEmuDecorator</Filter>
+    </ClCompile>
+    <ClCompile Include="OuterClientEmuDecorator.cpp">
+      <Filter>Toolkit\Network\OuterClientEmuDecorator</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskExecutor.cpp">
+      <Filter>Toolkit\Utils\TaskExecutor</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>Toolkit\Utils\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Hijack.cpp">
+      <Filter>Projects\Cheat\Hijack</Filter>
+    </ClCompile>
+    <ClCompile Include="KickClientEmu.cpp">
+      <Filter>Toolkit\Network\KickClientEmu</Filter>
+    </ClCompile>
+    <ClCompile Include="Translator.cpp">
+      <Filter>Toolkit\Utils\Translator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1000">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="1003">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="1005">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="1012">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="1016">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="4001">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="5041">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="5043">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="5056">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="5058">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="9915">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="20000">
+      <Filter>Toolkit</Filter>
+    </None>
+    <None Include="ImGui\imgui_user.inl">
+      <Filter>ImGui</Filter>
+    </None>
+    <None Include="Task.inl">
+      <Filter>Файлы заголовков</Filter>
+    </None>
+  </ItemGroup>
+</Project>

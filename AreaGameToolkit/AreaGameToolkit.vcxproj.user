@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AddonDLL|Win32'">
+    <LocalDebuggerCommand>C:\Asda 2\system\Asda2Crack.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>EIRUDJES2385AKDJF74</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>C:\Asda 2\system\</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CheatDLL|Win32'">
+    <LocalDebuggerCommand>C:\AsdaGlobal\system\AsdaGlobal (CheatDLL).exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory>C:\AsdaGlobal\</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RivetEXE|Win32'">
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
