@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InjectMe", "InjectMe", "{4036EC6B-369C-45F2-B1C1-B1638107154E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogViewer", "LogViewer\LogViewer.csproj", "{D4579A0B-2B6E-4600-AEB7-604E7A728CEF}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InjectMe", "AreaGameToolkit\AreaGameToolkit.vcxproj", "{7A45FFD7-8EA3-4254-8175-2D39757986A3}"
 EndProject
 Global
@@ -16,10 +14,6 @@ Global
 		RivetEXE|x86 = RivetEXE|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D4579A0B-2B6E-4600-AEB7-604E7A728CEF}.AddonDLL|x86.ActiveCfg = Release|Any CPU
-		{D4579A0B-2B6E-4600-AEB7-604E7A728CEF}.AddonDLL|x86.Build.0 = Release|Any CPU
-		{D4579A0B-2B6E-4600-AEB7-604E7A728CEF}.CheatDLL|x86.ActiveCfg = Release|Any CPU
-		{D4579A0B-2B6E-4600-AEB7-604E7A728CEF}.RivetEXE|x86.ActiveCfg = Release|Any CPU
 		{7A45FFD7-8EA3-4254-8175-2D39757986A3}.AddonDLL|x86.ActiveCfg = AddonDLL|Win32
 		{7A45FFD7-8EA3-4254-8175-2D39757986A3}.AddonDLL|x86.Build.0 = AddonDLL|Win32
 		{7A45FFD7-8EA3-4254-8175-2D39757986A3}.CheatDLL|x86.ActiveCfg = CheatDLL|Win32
@@ -31,7 +25,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D4579A0B-2B6E-4600-AEB7-604E7A728CEF} = {4036EC6B-369C-45F2-B1C1-B1638107154E}
 		{7A45FFD7-8EA3-4254-8175-2D39757986A3} = {4036EC6B-369C-45F2-B1C1-B1638107154E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
